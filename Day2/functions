@@ -1,0 +1,79 @@
+# # Functions 
+# def salary(total,pf):
+#     excact_salary = total - pf 
+#     return excact_salary
+
+# total = int(input("enter the amount"))
+# pf = int(input("enter the amount"))
+# result = salary(total,pf)
+# print(result)
+
+
+
+#pass By Value 
+
+def testfunction(arg):
+   print ("ID inside the function:", id(arg))
+
+var = "Hello"
+print ("ID before passing:", id(var))
+testfunction(var)
+
+
+def testfunction(arg):
+   print ("Inside function:",arg)
+   print ("ID inside the function:", id(arg))
+   arg=arg.append(100)
+   
+var=[10, 20, 30, 40]
+print ("ID before passing:", id(var))
+testfunction(var)
+print ("list after function call", var)
+
+
+
+#function with argumensts
+def greetings(name):
+   print ("Hello {}".format(name))
+   return
+   
+greetings("Samay")
+greetings("Pratima")
+greetings("Steven")
+
+
+# #positional Arguments 
+# def printme( str ):
+#    "This prints a passed string into this function"
+#    print (str)
+#    return
+
+# # Now you can call printme function
+# printme()
+
+
+
+# Keyword arguments
+# def printme( str ):
+#    "This prints a passed string into this function"
+#    print (str)
+#    return
+
+# # Now you can call printme function
+# printme( str = "My string")
+
+
+# positional only arguments
+def posFun(x, y, /, z):
+    print(x + y + z)
+
+print("Evaluating positional-only arguments: ")
+posFun(33, 22, z=11) 
+
+
+# Function Annotations 
+def myfunction(a: int, b: int) -> int:
+   c = a+b
+   return c
+print(myfunction(56,88))
+print(myfunction.__annotations__)
