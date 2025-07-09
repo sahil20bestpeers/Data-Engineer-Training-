@@ -1,0 +1,40 @@
+# #Lambda Function 
+# Key characteristics of lambda functions:
+# Anonymous: They are not assigned a name, hence "anonymous."
+# Single Expression: A lambda function can take any number of arguments but can only contain one expression, which is evaluated and returned implicitly.
+# Concise: They offer a compact syntax for simple functions, often used inline.
+# Commonly used with Higher-Order Functions: Lambda functions are frequently employed as arguments to functions like map(), filter(), and sorted(), which take other functions as arguments.
+
+add_numbers = lambda x, y : x+y
+result = add_numbers(8,4)
+print(result)
+
+
+square_root = lambda x :x**2
+result = square_root(6)
+print(result)
+
+    
+# List Comprehension 
+a = [1, 2, 3, 4, 5]
+a1=[x**2 for x in a]
+print(a1)
+
+
+
+a = [i for i in range(10)]
+
+print(a)
+
+matrix = [[1, 2], [3, 4]]
+flattened_list = [num for row in matrix for num in row]
+print(flattened_list)   
+
+
+
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = [num for num in numbers if num % 2 == 0]
+print(even_numbers)
+
+
+    
