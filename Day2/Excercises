@@ -1,0 +1,57 @@
+#  Practice: Write a function to clean and transform tabular data
+
+def clean_tabular_data(lst):
+    for values in lst.values:
+        for i in values:
+         if i == "None" or i == "null" or i == "":
+                lst.pop(i)
+    print(lst)
+            
+ 
+ 
+lst = { 
+        
+        'rollno': [101,102,None],
+        'amount' : [2000, "Null", 3000],
+        'netamount':[4000,30000,2000,""]
+        }
+clean_tabular_data(lst)
+
+
+
+
+
+# Exercise 3:
+# Build a function clean_data(data_list) that:
+# Removes empty strings.	
+# Trims whitespace.
+# Converts numeric strings to integers.
+
+def clean_data(data_list):
+    ans = []
+    for i in data_list:
+        if i == "":
+            continue
+        if i.isdigit():
+            ans.append(int(i))
+        else:
+            ans.append(i)
+    print(ans)
+    
+data_list = ["apple", "", "banana", "", "cherry", "", "23","6","865"]
+clean_data(data_list)
+
+
+
+# Exercise 4:
+# Write a custom implementation of map() to transform a list of temperatures from Celsius to Fahrenheit.
+
+
+temperature = [20,16,34,25,32]
+
+newplaces = list(map(lambda c: (c * 9/5)+ 32, temperature))
+print(newplaces)
+
+
+
+
