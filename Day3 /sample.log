@@ -1,0 +1,60 @@
+0322 085101 ERROR main  RSVP Agent started 
+ 02
+0322 085101 ERROR locateconfigFile Specified configuration file uuser10rsvpd1conf
+0322 085101 ERROR main Using log level 511
+0322 085101 ERROR settcpimage Get TCP images rc  EDC8112I Operation not supported on socket
+ 03
+0322 085101 ERROR settcpimage Associate with TCPIP image name  TCPCS
+0322 085102 ERROR regprocess registering process with the system
+0322 085102 ERROR regprocess attempt OS390 registration
+0322 085102 ERROR regprocess return from registration rc0
+ 04
+0322 085106 TRACE readphysicalnetif Home list entries returned  7
+0322 085106 INFO readphysicalnetif index 0 interface VLINK1 has address 129111 ifidx 0
+0322 085106 INFO readphysicalnetif index 1 interface TR1 has address 93765139 ifidx 1
+0322 085106 INFO readphysicalnetif index 2 interface LINK11 has address 9671001 ifidx 2
+0322 085106 INFO readphysicalnetif index 3 interface LINK12 has address 9671011 ifidx 3
+0322 085106 INFO readphysicalnetif index 4 interface CTCD0 has address 96711698 ifidx 4
+0322 085106 INFO readphysicalnetif index 5 interface CTCD2 has address 96711798 ifidx 5
+0322 085106 INFO readphysicalnetif index 6 interface LOOPBACK has address 127001 ifidx 0
+0322 085106 INFO mailslotcreate creating mailslot for timer
+0322 085106 INFO mailboxregister mailbox allocated for timer
+ 05
+0322 085106 INFO mailslotcreate creating mailslot for RSVP
+0322 085106 INFO mailboxregister mailbox allocated for rsvp
+0322 085106 INFO mailslotcreate creating mailslot for RSVP via UDP
+ 06
+0322 085106 WARNINGmailslotcreate setsockoptMCASTADD failed  EDC8116I Address not available
+0322 085106 INFO mailboxregister mailbox allocated for rsvpudp
+0322 085106 TRACE entityinitialize interface 129111 entity for rsvp allocated and initialized
+0322 085106 INFO mailslotcreate creating mailslot for RSVP
+0322 085106 INFO mailboxregister mailbox allocated for rsvp
+0322 085106 INFO mailslotcreate creating mailslot for RSVP via UDP
+0322 085106 WARNINGmailslotcreate setsockoptMCASTADD failed  EDC8116I Address not available
+0322 085106 INFO mailboxregister mailbox allocated for rsvpudp
+0322 085106 TRACE entityinitialize interface 93765139 entity for rsvp allocated and
+initialized
+0322 085106 INFO mailslotcreate creating mailslot for RSVP
+0322 085106 INFO mailboxregister mailbox allocated for rsvp
+0322 085106 INFO mailslotcreate creating mailslot for RSVP via UDP
+0322 085106 WARNING mailslotcreate setsockoptMCASTADD failed  EDC8116I Address not available
+0322 085106 INFO mailboxregister mailbox allocated for rsvpudp
+0322 085106 TRACE entityinitialize interface 9671001 entity for rsvp allocated and initialized
+0322 085106 INFO mailslotcreate creating mailslot for RSVP
+0322 085106 INFO mailboxregister mailbox allocated for rsvp
+0322 085106 INFO mailslotcreate creating mailslot for RSVP via UDP
+0322 085106 WARNING mailslotcreate setsockoptMCASTADD failed  EDC8116I Address not available
+0322 085106 INFO mailboxregister mailbox allocated for rsvpudp
+0322 085106 TRACE entityinitialize interface 9671011 entity for rsvp allocated and initialized
+0322 085106 INFO mailslotcreate creating mailslot for RSVP
+0322 085106 INFO mailboxregister mailbox allocated for rsvp
+0322 085106 INFO mailslotcreate creating mailslot for RSVP via UDP
+0322 085106 INFO mailboxregister mailbox allocated for rsvpudp
+0322 085106 TRACE entityinitialize interface 96711698 entity for rsvp allocated and
+initialized
+0322 085106 INFO mailslotcreate creating mailslot for RSVP
+0322 085106 INFO mailboxregister mailbox allocated for rsvp
+0322 085106 INFO mailslotcreate creating mailslot for RSVP via UDP
+0322 085106 INFO mailboxregister mailbox allocated for rsvpudp
+0322 085106 TRACE entityinitialize interface 96711798 entity for rsvp allocated and
+initialized
