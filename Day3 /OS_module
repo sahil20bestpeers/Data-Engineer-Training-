@@ -1,0 +1,48 @@
+import os
+# os.mkdir(): Creates a new directory.
+# os.makedirs(): Creates directories recursively.
+# os.rmdir(): Removes an empty directory.
+# os.remove(): Deletes a file.
+# os.rename(): Renames a file or directory.
+# os.listdir(): Lists the contents (files and directories) of a specified path.
+# os.getcwd(): Returns the current working directory.
+# os.chdir(): Changes the current working directory.
+
+
+
+# os.path.join(): Joins path components intelligently.
+# os.path.exists(): Checks if a path exists.
+# os.path.isfile(): Checks if a path refers to a file.
+# os.path.isdir(): Checks if a path refers to a directory.
+# os.path.basename(): Extracts the filename from a path.
+# os.path.dirname(): Extracts the directory path from a path.
+
+# Environment Variables:
+# os.environ: A dictionary-like object to access and modify environment variables.
+# Process Management:
+# os.system(): Executes a shell command.
+
+
+# os.mkdir("home")
+
+# os.makedirs("home")
+
+# os.rmdir("home")
+
+
+# os.rename("sahil.txt","sahil1.txt")
+
+
+# print(os.listdir())
+
+
+# print(os.getcwd())
+
+
+# print(os.chdir())
+a = os.path.exists("/home/developer/Downloads/Day 3/sahil.txt")
+print(a) 
+
+print(os.path.isfile("/home/developer/Downloads/Day 3/sahil.txt")) 
+
+
