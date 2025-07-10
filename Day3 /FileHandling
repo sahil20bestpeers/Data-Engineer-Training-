@@ -1,0 +1,131 @@
+# with open ("sahil.txt", 'r') as file:
+#     content = file.read()
+#     print(content)
+    
+    
+    
+
+# Writing to a .txt file
+with open ("sahil.txt", 'a') as file:
+    file.write("sahil chourasiya")
+    
+
+# 2. Reading and Writing .csv Files:
+# csv module:
+# Python's built-in csv module provides tools for handling CSV (Comma Separated Values) files.
+# Reading:
+# Use csv.reader() to iterate over rows, or csv.DictReader() to read rows as dictionaries with header names as keys.
+# Writing:
+# Use csv.writer() and its writerow() or writerows() methods, or csv.DictWriter() for dictionary-based writing.
+
+import csv 
+
+
+# with open("data.csv",'r', newline="") as file:
+#     reader = csv.reader(file)
+#     for row in reader:
+#         print(row)
+        
+        
+        
+# Writing to a .csv file
+
+data = [['Name','Age'],['Alice',30],['Bob',25]]
+with open ("output.csv", 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+    
+    
+    
+    
+# 3. Reading and Writing .json Files:
+# json module:
+# Python's built-in json module facilitates working with JSON (JavaScript Object Notation) data.
+# Reading:
+# Use json.load() to deserialize JSON data from a file object into a Python object (e.g., dictionary, list).
+# Writing:
+# Use json.dump() to serialize a Python object into JSON format and write it to a file.
+
+
+
+import json
+
+# with open("config.json","r") as file:
+#     config_data = json.load(file)
+#     print(config_data)
+    
+
+
+# # writting to a .json file 
+# new_data = {
+#     'product' : 'Laptop',
+#     'Price' : '1200',
+#     'in_stock' : True
+# }
+
+# with open('output.json','w') as file:
+#     json.dump(new_data,file, indent=4)
+
+x = '{ "organization":"GeeksForGeeks","city":"Noida","country":"India"}'
+
+# python object to be appended
+y = {"pin":110096}
+
+# parsing JSON string:    
+z = json.loads(x)
+
+# appending the data      
+z.update(y)
+
+# the result is a JSON string:
+print(json.dumps(z))
+
+
+
+import json
+
+with open('output.json', 'r') as openfile:
+
+    json_object = json.load(openfile)
+
+print(json_object)
+print(type(json_object))
+
+import json
+lst =  '{ "name":"John", "age":30, "city":"New York"}'
+loads = json.loads(x)
+print(loads["age"])
+
+lst1 = {'lalalala': 3}
+myString = json.dumps(a)
+print (myString)
+
+
+import json 
+   
+# Data to be written 
+dictionary ={ 
+  "id": "04", 
+  "name": "sunil", 
+  "department": "HR"
+}
+ 
+# Serializing json  
+json_object = json.dumps(dictionary, indent = 4) 
+print(json_object)
+
+import json
+ 
+# Data to be written
+dictionary ={
+    "name" : "sathiyajith",
+    "rollno" : 56,
+    "cgpa" : 8.6,
+    "phonenumber" : "9976770500"
+}
+ 
+with open("output.json", "w") as outfile:
+    json.dump(dictionary, outfile)
+    
+    
+
