@@ -1,0 +1,95 @@
+# The try block lets you test a block of code for errors.
+
+# The except block lets you handle the error.
+
+# The else block lets you execute code when there is no error.
+
+# The finally block lets you execute code, regardless of the result of the try- and except blocks.
+
+x = 8 
+try:
+  print(x)
+except:
+  print("An exception occurred")
+  
+x = 7
+try:
+  print(x)
+except NameError:
+  print("Variable x is not defined")
+except:
+  print("Something else went wrong")
+  
+  
+  
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
+  
+  
+x = "sahil"
+try:
+  print(x)
+except NameError:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
+  
+  
+  
+try:
+  f = open("demofile.txt")
+  try:
+    f.write("Lorum Ipsum")
+  except:
+    print("Something went wrong when writing to the file")
+  finally:
+    f.close()
+except:
+  print("Something went wrong when opening the file")   
+  
+
+
+def divide_numbers(a,b):
+    try:
+        result = a/b
+        print("Division result", result)
+    except ZeroDivisionError:
+        print("Division by zero is not allowed")
+    finally:
+        print("Execution in  allowed")
+        
+        
+divide_numbers(10,2)
+divide_numbers(10,0)
+
+
+
+
+# try:
+#   f = open(“test.txt", 'r')
+#   data = f.read()
+#   print(data)
+# Except IOError as e:
+#   Print(e)
+# except:
+#   print("Fiddlesticks! Failed")
+# finally:
+#   print("Finally!")
+# print("All Done")
+
+
+try:
+  with open("sahil.txt", 'r')  as f:
+    data = f.read()
+    print(data)
+except IOError as e:
+    print(e)
+except :
+    print("failed")
+finally:
+     print("finally")
+print("All Done")
