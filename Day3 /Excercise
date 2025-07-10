@@ -1,0 +1,41 @@
+
+# Exercise 5:
+# Read a log file (text).
+# Count total errors ("ERROR") and warnings ("WARNING").
+# Save the summary in JSON format.
+
+
+with open ("sample.log", 'r') as file:
+    read_file = file.readlines()
+    print(read_file)
+
+INFO_count = 0
+Warning_count = 0 
+for ch in read_file :
+    for j in ch.split(" "):
+        if j == "ERROR" :
+            ERROR_count += 1
+        if j == "WARNING":
+            Warning_count += 1
+            
+print("warning_count=" , Warning_count,)
+print("ERROR_COUNT=", ERROR_count)
+            
+
+
+
+#  Exercise 6:
+#  Try reading a non-existent file and catch the error gracefully.
+
+
+try:
+     with open ("sahil.txt", 'r') as file:
+      content = file.read()
+      print(content)
+except  FileNotFoundError:
+     print("file not found error")
+else:
+    print("Trying to read the non existance file")
+
+
+
